@@ -1,5 +1,10 @@
 # Go Load Balancer
 
+[![Test](https://github.com/amarialeitao/go-load-balancer/actions/workflows/test.yml/badge.svg)](https://github.com/amarialeitao/go-load-balancer/actions/workflows/test.yml)
+![Go](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go&logoColor=white)
+![Dependencies](https://img.shields.io/badge/dependencies-standard%20library%20only-success)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A small HTTP load balancer written in Go with only the standard library. It listens on one port and spreads incoming requests across a list of backend servers in round-robin order, forwarding each request through a reverse proxy.
 
 I built it to understand what sits between a client and a pool of servers: how a request is proxied, how the next server is chosen, and how to keep that choice safe when many requests arrive at the same time.
